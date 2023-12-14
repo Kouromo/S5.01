@@ -1,14 +1,83 @@
+/*GLOBAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
+    background-color: #232329;
 }
 
-header, nav, section, footer {
-    margin: 20px;
+main{
+    margin: 40px 20%;
+}
+
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #2d2d34;
+    height: 80px;
+    text-align: center;
 }
 
 nav a {
-    margin-right: 20px;
+    display: block;
+    padding: 10px 0px;
     text-decoration: none;
+}
+
+.allLinks:hover {
+    color: lightgray;
+}
+
+.allLinks {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.sous{
+    display: none;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.sous li {
+    float: none;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    color: white;
+    border-bottom: none;
+    background-color: darkgreen;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgb(111, 186, 111);
+}
+
+nav ul {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+.MenuItem {
+    padding: 0px 20px;
+}
+li{
+    list-style-type: none;
 }

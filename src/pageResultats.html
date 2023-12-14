@@ -9,22 +9,31 @@
 <body>
     <head>
         <nav>
-            <a href="definition.html">C'est quoi le numérique responsable ?</a>
-            <a href="commentEtPourquoiAgir.html">Comment et pourquoi agir à mon niveau ?</a>
-            <a href="outilsPourSAutoevaluer.html">Outils pour s'autoévaluer</a>
-            <a href="comprendreSesResultats.html">Comprendre ses résultats</a>
-            <select name="choix">
-                <option value="association">Association</option>
-                <option value="tpe">TPE</option>
-                <option value="collectivite">Collectivité</option>
-            </select>
-            <img src="logo.png" alt="Logo de GreenInit" width="50" height="50">
+            <ul>
+                <li class="MenuItem"><a href="definition.html" class="allLinks">C'est quoi le numérique responsable ?</a></li>
+                <li class="MenuItem">
+                    <a href="commentEtPourquoiAgir.html" class="allLinks" class="deroulant">Comment et pourquoi agir à mon niveau ?</a>
+                    <ul class="sous">
+                        <li><a href="commentEtPourquoiAgir.html#associationAgir" value="association">Association</a></li>
+                        <li><a href="commentEtPourquoiAgir.html#collectiviteAgir" value="tpe">TPE</a></li>
+                        <li><a href="commentEtPourquoiAgir.html#entrepriseAgir" value="collectivite">Collectivité</a></li>
+                    </ul>
+                
+                </li>
+                <li class="MenuItem"><a href="outilsPourSAutoevaluer.html" class="allLinks">Outils pour s'autoévaluer</a></li>
+                <li class="MenuItem"><a href="comprendreSesResultats.html" class="allLinks">Comprendre ses résultats</a></li>
+                <li class="MenuItem">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Logo de GreenInit" width="50" height="50">
+                    </a>
+                </li>
+            </ul>
         </nav>
         <hr>
     </head>
     <main>
         <section>
-            <h2>Convernant votre site</h2>
+            <h2>Concernant votre site</h2>
             <article>
                 <h3>Vous obtenez la note de [note] !</h3>
                 <p>
@@ -75,7 +84,7 @@
     </main>
     <footer>
         <div>
-            <a href="rgpd.html">RGPD</a>
+            <a href="rgpd.html" class="allLinks">RGPD</a>
         </div>
     </footer>
 </body>
